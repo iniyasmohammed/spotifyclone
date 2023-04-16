@@ -12,8 +12,7 @@ body{
     background: linear-gradient(rgb(36, 36, 36), black);
 }
 .menufield{
-    min-width: 300px;
-    max-width: 25%;
+    width: 300px;
     background-color: rgb(20, 20, 20);
     height: 100vh;
     position: fixed;
@@ -22,13 +21,18 @@ body{
     height: 85px;
     width: 100%;
     background-color: rgba(24, 24, 24, 0.998);
+    margin-left: 300px;
     opacity: 10;
+    position: fixed;
+    
 }
 .mainlogo{
     margin-top: 15px;
     height: 50px;   
     margin-top: 25px;
     margin-left: 10%;
+    z-index: 2;
+
 }
 a,li.policypoints{
     color: white;
@@ -87,7 +91,6 @@ a,li.policypoints{
 .arrow-selector{
     width: fit-content;
     height: fit-content;
-    padding-left: 320px;
     padding-top: 20px;
 }
 .arrowbtn{
@@ -101,12 +104,12 @@ a,li.policypoints{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     color: rgb(167, 163, 163);
-    justify-content: flex-end;
+    justify-content: center;
     column-gap: 20px;
     list-style: none;
     margin-top: -14px;
     align-content: center;
-    margin-right: -20px;
+    margin-right: -150px;
 }
 .user_options{
     letter-spacing: 2.5px;
@@ -144,5 +147,8 @@ a,li.policypoints{
 }
 .arrowbtn:hover{
     cursor: not-allowed;
-    
 }
+.content1{
+    width: calc(100%-300px);
+    height: 100vh;
+}    
