@@ -3,24 +3,25 @@
 }
 body{
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(27, 26, 26);
 }
 .maincontainer{
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(rgb(36, 36, 36), black);
 }
 .menufield{
     min-width: 300px;
     max-width: 25%;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     height: 100vh;
     position: fixed;
 }
 .navbars{
     height: 85px;
     width: 100%;
-    background-color: rgba(30, 30, 30, 0.998);
+    background-color: rgba(24, 24, 24, 0.998);
     opacity: 10;
 }
 .mainlogo{
@@ -29,7 +30,7 @@ body{
     margin-top: 25px;
     margin-left: 10%;
 }
-a,li{
+a,li.policypoints{
     color: white;
     text-decoration: none;
     list-style: none;
@@ -40,7 +41,6 @@ a,li{
     filter: invert();
     margin-top: 15px;
     padding-right: 30px;
-    margin-left: 15px;
 }
 .heart{
     filter: none;
@@ -49,15 +49,15 @@ a,li{
     height: 30px;
 }
 .policypoints a, .policypoints li{
-    
     color: grey;
     line-height: 2.5;
-    
+    margin-left: 4px;
 }
 .terms{
     display: grid;
     grid-template-columns: auto auto;
     font-size: small;
+    margin-top: -20px;
 }
 .language-btn{
     display: flex;
@@ -83,4 +83,66 @@ a,li{
     margin-top: 3px;
     margin-left: -10px;
     padding-right: 10px;    
+}
+.arrow-selector{
+    width: fit-content;
+    height: fit-content;
+    padding-left: 320px;
+    padding-top: 20px;
+}
+.arrowbtn{
+    width: 35px;
+    margin-left: 20px;
+    border-radius: 50%;
+    filter: invert(110%);
+    border: transparent;
+}
+.option-field{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    color: rgb(167, 163, 163);
+    justify-content: flex-end;
+    column-gap: 20px;
+    list-style: none;
+    margin-top: -14px;
+    align-content: center;
+    margin-right: -20px;
+}
+.user_options{
+    letter-spacing: 2.5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.straightline{
+    height: 30px;
+    width: 2px;
+    background-color: white;
+    margin-top: -5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.login{
+    border-radius: 50px;
+    width: 140px;
+    height: 60px; 
+    margin-top: -19px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-left: 20px;
+}
+.user_options:hover{
+    transform: scale(105%);
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+}
+.login:hover{
+    color:black
+}
+.signup{
+    letter-spacing: 0;
+}
+.arrowbtn:hover{
+    cursor: not-allowed;
+    
 }
