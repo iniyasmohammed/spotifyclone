@@ -243,5 +243,5 @@ a,li.policypoints{
     font-weight: bold;
 }
 .sleep:hover{
-    cursor: ;
+    cursor: unset;
 }
