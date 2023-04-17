@@ -4,12 +4,12 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(27, 26, 26);
+    background: linear-gradient(rgb(36, 36, 36), black);
 }
 .maincontainer{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgb(36, 36, 36), black);
+    position: relative;
 }
 .menufield{
     width: 300px;
@@ -81,6 +81,15 @@ a,li.policypoints{
     justify-content: center;
     font-weight: 900;
 }
+.cookies:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+#lng-btn:hover{
+    transform: scale(105%);
+    border: 1px solid white;
+    cursor: pointer;
+}
 .menu-icons-2{
     height: 20px;
     filter: invert();
@@ -148,7 +157,91 @@ a,li.policypoints{
 .arrowbtn:hover{
     cursor: not-allowed;
 }
-.content1{
+.content1,.content2{
     width: calc(100%-300px);
-    height: 100vh;
-}    
+    height: fit-content;
+    margin-bottom: -80px;
+} 
+.content2{
+    background-color: black;
+}
+.selectables, .selectables3{
+    display: flex;
+    width: 100%;
+    padding-top : 100px;
+    height: 100px;
+    justify-content: space-between;
+    color: white;
+}   
+.selectables1,.selectables3,.selectables5{
+    font-weight: bold;
+    margin-left: 350px;
+    font-size: 27px;
+    margin-top: 10px;
+}
+.selectables2{
+    margin-right: 30px;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+.selectables3,.selectables5{
+    height: 100px;
+    padding-top: 0;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+.selectables1:hover, .selectables2:hover{
+    text-decoration: underline;
+}
+.song_collections, .song_collections2{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    margin-left: 370px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    color: white;
+    width: 70%;
+    column-gap: 120px;
+
+}
+.play-btn{
+    position: absolute;
+    width: 70px;
+    margin-top: -210px;
+    margin-left: 180px;
+    visibility: hidden;
+}
+.song_collections2{
+    margin-top: -20px;
+}
+
+.song-n-description{
+    height: auto;
+    width: fit-content;
+    padding: 20px;
+    
+}
+.img-in-grid{
+    border-radius: 7px;
+    width: 250px;
+}
+.song-n-description:hover{
+    background-color: rgba(249, 248, 246, 0.119);
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.song-n-description:hover .play-btn{
+    visibility: visible;
+}
+.para-in-grid{
+    max-width: 250px;
+    line-height: 2;
+    color: rgb(178, 174, 169);
+    font-weight: bold;
+}
+.sleep:hover{
+    cursor: ;
+}
