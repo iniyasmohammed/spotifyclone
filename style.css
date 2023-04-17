@@ -4,18 +4,20 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: linear-gradient(rgb(36, 36, 36), black);
 }
 .maincontainer{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: relative;
+    background: linear-gradient(rgb(36, 36, 36), black);
+
 }
 .menufield{
     width: 300px;
-    background-color: rgb(20, 20, 20);
+    background-color: black;
     height: 100vh;
     position: fixed;
+    top: 0;
 }
 .navbars{
     height: 85px;
@@ -24,6 +26,7 @@ body{
     margin-left: 300px;
     opacity: 10;
     position: fixed;
+    top: 0;
     
 }
 .mainlogo{
@@ -163,8 +166,7 @@ a,li.policypoints{
     margin-bottom: -80px;
 } 
 .content2{
-    background-color: black;
-}
+    background-color: transparent};
 .selectables, .selectables3{
     display: flex;
     width: 100%;
@@ -234,7 +236,7 @@ a,li.policypoints{
     cursor: pointer;
 }
 .song-n-description:hover .play-btn{
-    visibility: visible;
+    visibility: hidden;
 }
 .para-in-grid{
     max-width: 250px;
@@ -244,4 +246,76 @@ a,li.policypoints{
 }
 .sleep:hover{
     cursor: unset;
+}
+.infosection{
+    width: 1280px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    column-gap: 50px;
+    padding-top: 80px;
+}
+.infocolumns,.infocolumns1{
+    width: 250px;
+    color: rgb(248, 244, 244);
+    background-color:transparent;
+}   
+.infolists a, .infolists{
+    color: rgba(248, 244, 244, 0.728);
+    margin-top: -10px;
+    list-style: none;
+    font-size: 18px;
+    line-height: 2.4;
+    margin-left: -15px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+.infohead{
+    margin-left: 10px;
+}
+.infocolumns1{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+.socialmedia{
+    width: 18px;
+    filter: invert();
+}
+.socialdiv{
+    padding-left: 10px;
+    padding-top: 2px;;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(71, 69, 69, 0.514);
+    border-radius: 50px;
+}
+.socialdiv:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.295);
+}
+.footer-seperator{
+    width: 1170px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.135);
+    margin-left: 330px;
+    margin-top: 100px;
+}
+.footer1{
+    width: 100%;
+    height: 150px;
+    margin-top: -50px;
+}
+h4{
+    margin-left: 350px;
+    color: rgba(255, 255, 255, 0.559);
+    margin-top: 100px;
+    letter-spacing: 1px;
 }
